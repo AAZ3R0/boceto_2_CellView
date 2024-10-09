@@ -8,18 +8,15 @@
 import UIKit
 
 class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
+    private var lista_de_publicaciones:[Post] = []
+    private let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
     private let identificador_de_celda = "celda_pantalla_principal"
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
         
-        // Do any additional setup after loading the view.
+        
     }
+
 
     /*
     // MARK: - Navigation

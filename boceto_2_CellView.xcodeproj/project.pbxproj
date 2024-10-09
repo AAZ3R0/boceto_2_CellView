@@ -15,6 +15,8 @@
 		FB5E87442CB433B000B2DD47 /* boceto_2_CellViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E87432CB433B000B2DD47 /* boceto_2_CellViewTests.swift */; };
 		FB5E874E2CB433B000B2DD47 /* boceto_2_CellViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E874D2CB433B000B2DD47 /* boceto_2_CellViewUITests.swift */; };
 		FB5E87502CB433B000B2DD47 /* boceto_2_CellViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E874F2CB433B000B2DD47 /* boceto_2_CellViewUITestsLaunchTests.swift */; };
+		FB603FEB2CB6D74F0060ED94 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB603FEA2CB6D74F0060ED94 /* post.swift */; };
+		FB603FEE2CB6E7320060ED94 /* provedor_publicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB603FED2CB6E7320060ED94 /* provedor_publicaciones.swift */; };
 		FBC6DFA12CB4375D00F5FFAE /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6DFA02CB4375D00F5FFAE /* ControladorPantallaPrincipalDeColeccion.swift */; };
 		FBC6DFA32CB43D3000F5FFAE /* VistaDeZelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6DFA22CB43D3000F5FFAE /* VistaDeZelda.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,8 @@
 		FB5E87492CB433B000B2DD47 /* boceto_2_CellViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boceto_2_CellViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5E874D2CB433B000B2DD47 /* boceto_2_CellViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITests.swift; sourceTree = "<group>"; };
 		FB5E874F2CB433B000B2DD47 /* boceto_2_CellViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB603FEA2CB6D74F0060ED94 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
+		FB603FED2CB6E7320060ED94 /* provedor_publicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = provedor_publicaciones.swift; sourceTree = "<group>"; };
 		FBC6DFA02CB4375D00F5FFAE /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
 		FBC6DFA22CB43D3000F5FFAE /* VistaDeZelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeZelda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +105,8 @@
 		FB5E872B2CB433AF00B2DD47 /* boceto_2_CellView */ = {
 			isa = PBXGroup;
 			children = (
+				FB603FEC2CB6E7110060ED94 /* Proveedor */,
+				FB603FE92CB6D6E50060ED94 /* Modelos */,
 				FBC6DF9E2CB4368100F5FFAE /* controladores_de_pantallas */,
 				FB5E872C2CB433AF00B2DD47 /* AppDelegate.swift */,
 				FB5E872E2CB433AF00B2DD47 /* SceneDelegate.swift */,
@@ -127,6 +133,22 @@
 				FB5E874F2CB433B000B2DD47 /* boceto_2_CellViewUITestsLaunchTests.swift */,
 			);
 			path = boceto_2_CellViewUITests;
+			sourceTree = "<group>";
+		};
+		FB603FE92CB6D6E50060ED94 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FB603FEA2CB6D74F0060ED94 /* post.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		FB603FEC2CB6E7110060ED94 /* Proveedor */ = {
+			isa = PBXGroup;
+			children = (
+				FB603FED2CB6E7320060ED94 /* provedor_publicaciones.swift */,
+			);
+			path = Proveedor;
 			sourceTree = "<group>";
 		};
 		FBC6DF9E2CB4368100F5FFAE /* controladores_de_pantallas */ = {
@@ -277,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB603FEB2CB6D74F0060ED94 /* post.swift in Sources */,
 				FB5E872D2CB433AF00B2DD47 /* AppDelegate.swift in Sources */,
+				FB603FEE2CB6E7320060ED94 /* provedor_publicaciones.swift in Sources */,
 				FB5E872F2CB433AF00B2DD47 /* SceneDelegate.swift in Sources */,
 				FBC6DFA32CB43D3000F5FFAE /* VistaDeZelda.swift in Sources */,
 				FBC6DFA12CB4375D00F5FFAE /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
