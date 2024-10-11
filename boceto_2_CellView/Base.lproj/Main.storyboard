@@ -45,21 +45,36 @@
                                     <rect key="frame" x="0.0" y="0.0" width="366" height="302"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkU-FP-jtr">
-                                            <rect key="frame" x="127" y="120" width="112" height="62"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkU-FP-jtr">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="14.333333333333334"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUk-LM-dat">
+                                            <rect key="frame" x="0.0" y="112" width="366" height="190"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="190" id="JiO-A9-7Tu"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="GkU-FP-jtr" firstAttribute="centerX" secondItem="G2L-M2-c0S" secondAttribute="centerX" id="59G-Gt-yoP"/>
-                                        <constraint firstItem="GkU-FP-jtr" firstAttribute="centerY" secondItem="G2L-M2-c0S" secondAttribute="centerY" id="aMM-yL-DoQ"/>
+                                        <constraint firstItem="VUk-LM-dat" firstAttribute="top" secondItem="GkU-FP-jtr" secondAttribute="bottom" constant="97.666666666666671" id="Aw3-go-cLy"/>
+                                        <constraint firstItem="VUk-LM-dat" firstAttribute="leading" secondItem="G2L-M2-c0S" secondAttribute="leading" id="DXu-HS-ky5"/>
+                                        <constraint firstAttribute="bottom" secondItem="VUk-LM-dat" secondAttribute="bottom" id="Nsy-aq-bC8"/>
+                                        <constraint firstAttribute="trailing" secondItem="GkU-FP-jtr" secondAttribute="trailing" id="YVN-3O-0X8"/>
+                                        <constraint firstAttribute="trailing" secondItem="VUk-LM-dat" secondAttribute="trailing" id="fPr-jf-EuG"/>
+                                        <constraint firstItem="GkU-FP-jtr" firstAttribute="leading" secondItem="G2L-M2-c0S" secondAttribute="leading" id="fwO-oV-9mb"/>
+                                        <constraint firstItem="GkU-FP-jtr" firstAttribute="top" secondItem="G2L-M2-c0S" secondAttribute="top" id="jQs-Hh-eRn"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.30821488959999999" green="0.60997905929999996" blue="0.31434272790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="customSize" width="366" height="302"/>
                                 <connections>
+                                    <outlet property="Cuerpo" destination="VUk-LM-dat" id="eKc-KJ-iRs"/>
                                     <outlet property="Etiqueta" destination="GkU-FP-jtr" id="Hi8-hq-9mp"/>
                                 </connections>
                             </collectionViewCell>
