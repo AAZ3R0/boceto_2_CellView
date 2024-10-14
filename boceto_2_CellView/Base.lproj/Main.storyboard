@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PZX-go-bCT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dte-k4-Ear">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -45,13 +45,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="366" height="302"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkU-FP-jtr">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkU-FP-jtr">
                                             <rect key="frame" x="0.0" y="0.0" width="366" height="14.333333333333334"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUk-LM-dat">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUk-LM-dat">
                                             <rect key="frame" x="0.0" y="112" width="366" height="190"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="190" id="JiO-A9-7Tu"/>
@@ -62,7 +62,9 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="VUk-LM-dat" firstAttribute="leading" secondItem="G2L-M2-c0S" secondAttribute="leading" id="4Uc-M8-1dT"/>
                                         <constraint firstItem="VUk-LM-dat" firstAttribute="top" secondItem="GkU-FP-jtr" secondAttribute="bottom" constant="97.666666666666671" id="Aw3-go-cLy"/>
+                                        <constraint firstAttribute="trailing" secondItem="VUk-LM-dat" secondAttribute="trailing" id="B6L-xr-Xv6"/>
                                         <constraint firstItem="VUk-LM-dat" firstAttribute="leading" secondItem="G2L-M2-c0S" secondAttribute="leading" id="DXu-HS-ky5"/>
                                         <constraint firstAttribute="bottom" secondItem="VUk-LM-dat" secondAttribute="bottom" id="Nsy-aq-bC8"/>
                                         <constraint firstAttribute="trailing" secondItem="GkU-FP-jtr" secondAttribute="trailing" id="YVN-3O-0X8"/>
