@@ -3,6 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,6 +24,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37O-jj-9jP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="36" y="13"/>
+        </scene>
+        <!--Controlador Pantalla Del Post-->
+        <scene sceneID="4zM-iL-OHV">
+            <objects>
+                <viewController id="eEe-e5-lE5" customClass="ControladorPantallaDelPost" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5zn-S5-YNw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1QW-lZ-ChC">
+                                <rect key="frame" x="0.0" y="410" width="393" height="408"/>
+                                <color key="backgroundColor" red="0.30821488959999999" green="0.60997905929999996" blue="0.31434272790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PFs-d6-SWS">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Qbq-09-t2O">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="45a-jl-9qo">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo de publicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xz-Ae-KBE">
+                                <rect key="frame" x="76" y="125" width="241" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto del cuerpo de la publicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lak-At-shP">
+                                <rect key="frame" x="16" y="254" width="260" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre_de_usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytJ-8I-NU9">
+                                <rect key="frame" x="16" y="197" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Mt-0f-U42"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Mt-0f-U42" firstAttribute="bottom" secondItem="1QW-lZ-ChC" secondAttribute="bottom" id="C4o-S5-v0I"/>
+                            <constraint firstItem="2Xz-Ae-KBE" firstAttribute="top" secondItem="3Mt-0f-U42" secondAttribute="top" constant="22" id="CLf-k8-9o6"/>
+                            <constraint firstItem="2Xz-Ae-KBE" firstAttribute="leading" secondItem="3Mt-0f-U42" secondAttribute="leading" constant="76" id="FhY-Li-hwF"/>
+                            <constraint firstItem="lak-At-shP" firstAttribute="top" secondItem="ytJ-8I-NU9" secondAttribute="bottom" constant="36" id="Ixr-Cg-mrW"/>
+                            <constraint firstItem="ytJ-8I-NU9" firstAttribute="leading" secondItem="3Mt-0f-U42" secondAttribute="leading" constant="16" id="Yrj-sO-AuD"/>
+                            <constraint firstItem="1QW-lZ-ChC" firstAttribute="leading" secondItem="3Mt-0f-U42" secondAttribute="leading" id="a1v-Eo-dfH"/>
+                            <constraint firstItem="1QW-lZ-ChC" firstAttribute="top" secondItem="lak-At-shP" secondAttribute="bottom" constant="179" id="cBN-ua-tww"/>
+                            <constraint firstItem="lak-At-shP" firstAttribute="leading" secondItem="3Mt-0f-U42" secondAttribute="leading" constant="16" id="clK-O7-cjF"/>
+                            <constraint firstItem="1QW-lZ-ChC" firstAttribute="trailing" secondItem="3Mt-0f-U42" secondAttribute="trailing" id="eKM-ra-igQ"/>
+                            <constraint firstItem="ytJ-8I-NU9" firstAttribute="top" secondItem="2Xz-Ae-KBE" secondAttribute="bottom" constant="39" id="emX-uH-2jE"/>
+                            <constraint firstItem="3Mt-0f-U42" firstAttribute="bottom" secondItem="1QW-lZ-ChC" secondAttribute="bottom" constant="280" id="exh-ee-Isp"/>
+                            <constraint firstItem="3Mt-0f-U42" firstAttribute="trailing" secondItem="2Xz-Ae-KBE" secondAttribute="trailing" constant="76" id="gGa-Ny-6xu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mvh-8A-6kG"/>
+                    <connections>
+                        <outlet property="Cuerpo_de_publicacion" destination="lak-At-shP" id="ssy-8o-F5b"/>
+                        <outlet property="Nombre_de_usuario" destination="ytJ-8I-NU9" id="wLD-Fp-TuY"/>
+                        <outlet property="Seccion_comentarios" destination="1QW-lZ-ChC" id="omc-4v-9N9"/>
+                        <outlet property="TItulo_de_publicacion" destination="2Xz-Ae-KBE" id="ZMI-VC-COB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFp-2Q-1ne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="13"/>
         </scene>
         <!--Controlador Pantalla Principal De Coleccion-->
         <scene sceneID="git-DL-t2C">
@@ -87,10 +166,18 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="apT-xE-zi2"/>
+                    <connections>
+                        <segue destination="eEe-e5-lE5" kind="show" id="zbx-gN-ieI"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMO-D2-H7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="867.93893129770993" y="12.67605633802817"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
