@@ -28,13 +28,13 @@
         <!--Controlador Pantalla Del Post-->
         <scene sceneID="4zM-iL-OHV">
             <objects>
-                <viewController id="eEe-e5-lE5" customClass="ControladorPantallaDelPost" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PantallaPublicacion" id="eEe-e5-lE5" customClass="ControladorPantallaDelPost" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5zn-S5-YNw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1QW-lZ-ChC">
-                                <rect key="frame" x="0.0" y="410" width="393" height="408"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1QW-lZ-ChC">
+                                <rect key="frame" x="0.0" y="410" width="393" height="128"/>
                                 <color key="backgroundColor" red="0.30821488959999999" green="0.60997905929999996" blue="0.31434272790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PFs-d6-SWS">
                                     <size key="itemSize" width="128" height="128"/>
@@ -43,7 +43,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Qbq-09-t2O">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CeldaComentario" id="Qbq-09-t2O">
                                         <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="45a-jl-9qo">
@@ -55,19 +55,19 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo de publicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xz-Ae-KBE">
-                                <rect key="frame" x="76" y="125" width="241" height="33"/>
+                                <rect key="frame" x="76" y="81" width="241" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto del cuerpo de la publicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lak-At-shP">
-                                <rect key="frame" x="16" y="254" width="260" height="21"/>
+                                <rect key="frame" x="16" y="210" width="260" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre_de_usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytJ-8I-NU9">
-                                <rect key="frame" x="16" y="197" width="154" height="21"/>
+                                <rect key="frame" x="16" y="153" width="154" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -166,13 +166,10 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="apT-xE-zi2"/>
-                    <connections>
-                        <segue destination="eEe-e5-lE5" kind="show" id="zbx-gN-ieI"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMO-D2-H7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867.93893129770993" y="12.67605633802817"/>
+            <point key="canvasLocation" x="866" y="-353"/>
         </scene>
     </scenes>
     <resources>
