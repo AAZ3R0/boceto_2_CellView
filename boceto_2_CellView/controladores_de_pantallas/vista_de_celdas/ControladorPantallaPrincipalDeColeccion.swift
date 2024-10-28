@@ -28,7 +28,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
                 }
             }
             else{
-                print(respuesta!)
+                print(respuesta)
             }}
             catch{
                 print ("error")

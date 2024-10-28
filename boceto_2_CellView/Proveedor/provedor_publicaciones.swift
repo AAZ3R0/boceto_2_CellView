@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class ProveedorDePublicaciones{
-    let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
+    let url_de_publicaciones = "https://jsonplaceholder.typicode.com/"
         var  lista_de_publicaciones: [Post] = []
         
         /*
@@ -25,14 +25,14 @@ class ProveedorDePublicaciones{
         
         func obtener_publicaicones(que_hacer_al_recibir: @escaping ([Post]) -> Void) {
         // func obtener_publicaicones() async throws -> [Publicacion] {
-            let ubicacion = URL(string: url_de_publicaciones)!
+            let ubicacion = URL(string: "\(url_de_publicaciones)posts")!
             URLSession.shared.dataTask(with: ubicacion) {
                     (datos, respuesta, error) in do {
                         if let publicaciones_recibidas = datos{
                             let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Post].self, from: publicaciones_recibidas)
                             
                             self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
-                            que_hacer_al_recibir(prueba_de_interpretacion_de_datos ?? [])
+                            que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
                         }
                         else {
                             print(respuesta!)
@@ -54,10 +54,10 @@ class ProveedorDePublicaciones{
                             que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
                         }
                         else {
-                            print(respuesta!)
+                            print(respuesta)
                         }
                     } catch {
-                        print("Error")
+                        print("Error :)")
                     }
             }.resume()
         }
@@ -72,7 +72,7 @@ class ProveedorDePublicaciones{
     
     func obtener_usuario(id: Int, que_hacer_al_recibir: @escaping (Usuario) -> Void){
         
-        let ubicacion = URL(string: "\(url_de_publicaciones)posts/\(id)")!
+        let ubicacion = URL(string: "\(url_de_publicaciones)users/\(id)")!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
                     if let publicaciones_recibidas = datos{
@@ -91,7 +91,7 @@ class ProveedorDePublicaciones{
     }
     
     func obtener_comentarios_en_publiciones(id: Int, que_hacer_al_recibir: @escaping ([Comentario]) -> Void){
-        let ubicacion = URL(string: "\(url_de_publicaciones)posts/\(id)")!
+        let ubicacion = URL(string: "\(url_de_publicaciones)posts/\(id)/comments")!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
                     if let publicaciones_recibidas = datos{

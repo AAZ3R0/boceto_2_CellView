@@ -44,6 +44,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
                 DispatchQueue.main.async {
                     self?.dibujar_publicacion()
                     self?.realizar_descarga_de_informacion()
+                    
                 }
             })
         }
@@ -54,15 +55,17 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
                     self?.dibujar_usuario()
                 }
             })
+            
+            proveedor_publicaciones.obtener_comentarios_en_publiciones(id: publicacion!.id, que_hacer_al_recibir: {
+                [weak self] (comentarios_descargados) in self?.lista_comentarios = comentarios_descargados
+                DispatchQueue.main.async{
+                    self?.Seccion_comentarios.reloadData()
+                }})
         }
         
     }
     func dibujar_publicacion(){
         guard let publicacion_actual = self.publicacion else{
-            return
-        }
-        
-        guard let usuario_actual = self.usuario else{
             return
         }
         
