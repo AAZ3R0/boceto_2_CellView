@@ -28,7 +28,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
                 }
             }
             else{
-                print(respuesta)
+                print(respuesta!)
             }}
             catch{
                 print ("error")
@@ -82,9 +82,11 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
         
         let pantalla_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
         
+        pantalla_publicacion.id_publicacion = self.lista_de_publicaciones[indexPath.item].id
+        
         self.navigationController?.pushViewController(pantalla_publicacion, animated: true)
         
-        print(self.navigationController)
+        print(self.navigationController!)
     }
 
     // MARK: UICollectionViewDelegate

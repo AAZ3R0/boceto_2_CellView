@@ -54,10 +54,10 @@ class ProveedorDePublicaciones{
                             que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
                         }
                         else {
-                            print(respuesta)
+                            print(respuesta!)
                         }
                     } catch {
-                        print("Error :)")
+                        print(error)
                     }
             }.resume()
         }
